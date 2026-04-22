@@ -17,7 +17,7 @@ if option == "Price Prediction":
     d3 = {'Manual': 0, 'Automatic': 1}
     d4 = {'First Owner': 1, 'Second Owner': 2, 'Third Owner': 3, 'Fourth Owner': 4}
 
-    st.title("Car Price Prediction")
+    st.title("Car Price and Mileage Prediction")
 
     insurance_validity = st.selectbox("Insurance Validity", list(d1.keys()))
     fuel_type = st.selectbox("Fuel Type", list(d2.keys()))
