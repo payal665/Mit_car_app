@@ -2,7 +2,10 @@ import streamlit as st
 import pickle
 import numpy as np
 
-model = pickle.load(open('mileage_model.pkl', 'rb'))
+import os
+
+model_path = os.path.join(os.getcwd(), "mileage_model.pkl")
+model = pickle.load(open(model_path, 'rb'))
 
 fuel_dict = {'Petrol': 0, 'Diesel': 1, 'CNG': 2, 'LPG': 3}
 trans_dict = {'Manual': 0, 'Automatic': 1}
